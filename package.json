@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Upper case words in string",
   "main": "uc-words.js",
-  "private": true,
   "author": "Gary <gravity.addiction@gmail.com>",
   "license": "License-Ref",
   "dependencies": {
