@@ -9,21 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var UcWordsPipe = (function () {
-    function UcWordsPipe() {
+var common_1 = require('@angular/common');
+var uc_words_1 = require('./uc-words');
+var UcWordsPipeModule = (function () {
+    function UcWordsPipeModule() {
     }
-    UcWordsPipe.prototype.transform = function (str) {
-        return (str + '').replace(/^([a-z])|\s+([a-z])/g, function ($1) {
-            return $1.toUpperCase();
-        });
-    };
-    UcWordsPipe = __decorate([
-        core_1.Pipe({
-            name: 'UcWords'
+    UcWordsPipeModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [uc_words_1.UcWordsPipe],
+            exports: [uc_words_1.UcWordsPipe]
         }), 
         __metadata('design:paramtypes', [])
-    ], UcWordsPipe);
-    return UcWordsPipe;
+    ], UcWordsPipeModule);
+    return UcWordsPipeModule;
 }());
-exports.UcWordsPipe = UcWordsPipe;
-//# sourceMappingURL=uc-words.js.map
+exports.UcWordsPipeModule = UcWordsPipeModule;
+//# sourceMappingURL=index.js.map
