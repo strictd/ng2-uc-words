@@ -1,6 +1,6 @@
 {
-  "name": "@strictd/uc-words",
-  "version": "1.1.4",
+  "name": "@strictd/ng2-uc-words",
+  "version": "1.1.5",
   "description": "Upper case words in string",
   "keywords": [
     "angular2",
